@@ -66,11 +66,11 @@ console.log(num);
 
 // tostring()
 
-var num = 5 * 5;
-num = num.tostring();
-
-console.log(typeof num.tostring());
-console.log(typeof num);
+// var num = 5 * 5;
+// num = num.tostring();
+//
+// console.log(typeof num.tostring());
+// console.log(typeof num);
 
 
 // isNaN() - checks to see if the value provides is not-a-number
