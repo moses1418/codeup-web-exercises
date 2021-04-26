@@ -14,17 +14,17 @@
 // your code should generate another random number between 1 and 5, simulating the amount of cones being bought by her
 // clients. Use a do-while loop to log to the console the amount of cones sold to each person. This is a way get the
 // random numbers for this exercise.
-
-var randomNumber = Math.floor(Math.random() * (100 - 50)) + 50;
-var cones = randomNumber;
-var purchasedCones = Math.floor(Math.random() * (5 - 1) + 1);
-var conesBought = purchasedCones;
-
-do {
-    console.log(`I have ${cones} cones left to sell`)
-    cones -= conesBought;
-} while (cones >=0)
-console.log(`Sold out!!!`)
+//
+// var randomNumber = Math.floor(Math.random() * (100 - 50)) + 50;
+// var cones = randomNumber;
+// var purchasedCones = Math.floor(Math.random() * (5 - 1) + 1);
+// var conesBought = purchasedCones;
+//
+// do {
+//     console.log(`I have ${cones} cones left to sell`)
+//     cones -= conesBought;
+// } while (cones >=0)
+// console.log(`Sold out!!!`)
 
 
 // // TODO: A parking lot with 30 parking spaces wants to display the amount of spaces available as it gets filled.
@@ -41,4 +41,52 @@ console.log(`Sold out!!!`)
 // } while (parkingSpots > 0);
 // console.log(`The parking lot is full.`)
 
+
+
+
+// function countDown() {
+//     for(let i = counter; i > 0; i--) {
+//         console.log("second: " + i);
+//     }
+// }
+// for(let i = 0; i <= 5; i++) {
+//     console.log("first: " + i);
+//     var counter = i;
+//     if(i === 5) {
+//         countDown();
+//     }
+// }
+
+
+// TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
+//  odd number, print "odd"
+// // HINT: remember the remainder operator (modulo)
+
+
+// for (let taters = 0; taters <= 30; taters++){
+//     if(taters % 2 === 0){
+//         // console.log(`You have ${taters} taters!`);
+//
+//         taters + 2;
+//     }else{
+//         console.log("odd tater " + taters)
+//     }
+// }
+
+
+
+
+// // TODO: loop through numbers 1 - 40. Print "marco" if it's divisible by 3. Print "polo" if it's divisible by 5.
+//  If it's neither print "I'm not playing"
+//  Print "marco polo" if it's divisible by 3 and 5.
+
+for (let fish = 1; fish <=40; fish++) {
+    if (fish % 3 === 0){
+        console.log(fish + " marco polo")
+    }else if (fish % 5 ===0){
+        console.log(fish + " polo marco")
+    }else{
+        console.log(fish + " I'm not playing!!!")
+    }
+}
 
