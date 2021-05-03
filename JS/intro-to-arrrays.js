@@ -60,18 +60,18 @@
 //      -> console.log EVERY possible thing which could change as your loop runs
 //          -> consider how the methods you are using change state of the array
 //     console.log("-----------")
-//     console.log('This is the current array for days ' + days)
-//     function daysOfTheWeek(weekDays) {
-//         var newWeek = [];
-//         var arrayLength = weekDays.length;
-//         console.log(`test parameters ${weekDays}`)
-//         for (let i = 0; i < arrayLength; i++) {
-//             newWeek.unshift(weekDays.pop());
-//             console.log(weekDays)
-//         }
-//         console.log(newWeek)
-//     }
-//     daysOfTheWeek(days);
+    console.log('This is the current array for days ' + days)
+    function daysOfTheWeek(weekDays) {
+        var newWeek = [];
+        var arrayLength = weekDays.length;
+        console.log(`test parameters ${weekDays}`)
+        for (let i = 0; i < arrayLength; i++) {
+            newWeek.unshift(weekDays.pop());
+            console.log(weekDays)
+        }
+        console.log(newWeek)
+    }
+    daysOfTheWeek(days);
 
 
 
