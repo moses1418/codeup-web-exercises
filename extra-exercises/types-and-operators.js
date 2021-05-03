@@ -114,8 +114,7 @@
     //  -> If the input is numeric or not a string, return false
 
     function stickyCaps (sentence){
-    var array = line1 [];
-        array = sentence.toCharArray();
+//        array = sentence.toCharArray();
         for (let i = 0; i < array.length; i += 2){
             if (array[i] == " "){
                 i++;
