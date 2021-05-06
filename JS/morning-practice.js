@@ -20,3 +20,11 @@ function cubeRoot(x){
 }
 
 console.log(cubeRoot(10));
+
+// Write a function called last(input) that returns the last character of a string
+
+function last(input){
+    return input.slice(-1);
+}
+
+console.log(last("chocolate"));
