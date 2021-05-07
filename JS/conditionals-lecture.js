@@ -61,23 +61,23 @@
 
     // TERNARY
 
-    function showFatType(){
-        var fatType= "butter";
-
-        var isButter = fatType.toLowerCase() === "butter";
-
-        return isButter
-            ? "'Mo' butta, mo' betta!' \n\t -Paula Deen";
-            : "'I can't Believe It's Not Butter!' \n\t-Fangirls of Favio";
-    }
+    // function showFatType(){
+    //     var fatType= "butter";
+    //
+    //     var isButter = fatType.toLowerCase() === "butter";
+    //
+    //     return isButter
+    //         ? "'Mo' butta, mo' betta!' \n\t -Paula Deen";
+    //         : "'I can't Believe It's Not Butter!' \n\t-Fangirls of Favio";
+    // }
 
         console.log(showFatType());
 
     // SWITCH STATEMENTS
 
-        var age = 26;
-        var heartRange;
-        switch
+        // var age = 26;
+        // var heartRange;
+        // switch
 
 
 }
