@@ -61,22 +61,43 @@ a {
     line-height: 80px;
 }
 .profile-details {
-    display: flex;
     width: calc(25% - 1em);
-    margin: 0 .5em 0 .5em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .timeline {
-    display: flex;
     width: calc(50% - 1em);
-    margin: 0 .5em 0 .5em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .who-to-follow {
-    display: flex;
     width: calc(25% - 1em);
-    margin: 0 .5em 0 .5em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 .container {
-    padding-top: 2em;
+    padding: 2em;
+    display: flex;
+}
+.media {
+    width: 100%;
+    background-color: #FFF;
+    border-bottom: solid grey;
+    padding: .5em;
+}
+.media-image {
+    width: 50px;
+    margin: 1.33em;
+}
+.media-body {
+    width: calc(100% - 2.66em);
+}
+.profile-items {
+    padding: 0;
+
+}
+.profile-entry {
+    margin: .5em;
 }
 .btn {
     border: 1px solid var(--main-link-color);
