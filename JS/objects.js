@@ -57,6 +57,15 @@
         {name: 'George', amount: 320}
     ];
 
+
+        shoppers.forEach(function (name){
+           if(name.amount > 200) {
+              console.log(`Hello, ${name.name}, your total is ${name.amount}, your discount is ${name.amount * .12} your price after discount is ${name.amount - (name.amount * .12)}`)
+           }else{
+              console.log(`Hello, ${name.name}, you unfortunately do not meet the requirements for the discount.`)
+           }
+        });
+
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -69,6 +78,20 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {title: "Exile", author: {firstName: "Robert Anthony", lastName: "Salvatore" }},
+        {title: "The Hobbit", author: {firstName: "J.R.R", lastName: "Tolkien" }},
+        {title: "Harry Potter", author: {firstName: "J.K", lastName: "Rowling"}},
+        {title: "Alice in Borderland", author: {firstName: "Ryō", lastName: "Ōyama"}},
+        {title: "The Way of Kings", author: {firstName: "Brandon", lastName: "Sanderson"}}
+    ];
+
+
+
+
+
+
 
     /**
      * TODO:
@@ -95,6 +118,14 @@
      *      ...
      */
 
+    books.forEach(function (name,array){
+        console.log(`Book #${array + 1} 
+      Title: ${name.title}
+      Author: ${name.author.firstName} ${name.author.lastName}
+      --------`)
+    })
+
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -105,5 +136,18 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(title, author){
+        return newBooks = {title: title,
+            author: author,
+        }
+    }
+    createBook("The God of High School", "Yongje Park")
+    console.log(newBooks)
+    function showBookInfo(bookObj){
+        console.log(`Title: ${bookObj.title}
+      Author: ${bookObj.author}`)
+    }
+    showBookInfo(newBooks)
 
 })();

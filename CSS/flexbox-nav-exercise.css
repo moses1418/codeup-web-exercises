@@ -1,8 +1,10 @@
 .container{
     display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
     background-color: #848487;
+    justify-content: space-between;
+}
+body{
+    margin: 0;
 }
 
 .first-nav{
@@ -14,12 +16,13 @@ ul{
     display: flex;
     list-style-type: none;
     flex-direction: row;
+    padding-left: .5em;
 
 }
 
 .nav-list{
     display: inline-block;
-    padding-left: .5em;
+    font-family: Montserrat, Serif;
     padding-right: .5em;
 }
 
@@ -38,7 +41,6 @@ a:hover{
 }
 
 .logo{
-
 }
 
 .logo-spot{
@@ -46,7 +48,11 @@ a:hover{
     font-size: 3em;
     padding-top: .2em;
     padding-bottom: .2em;
-    margin: auto;
+    font-family: Work Sans, Serif;
+    margin-right: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+
 
 
 }
