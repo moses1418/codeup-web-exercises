@@ -138,6 +138,7 @@
      */
 
     function createBook(title, author){
+        var newBooks;
         return newBooks = {title: title,
             author: author,
         }
