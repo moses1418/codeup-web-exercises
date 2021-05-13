@@ -58,9 +58,9 @@ for(let i = 1; i<= 9; i++){
 //
 // ----------
 //
-for( let cars = 100; cars >= 5; cars -=5){
-    console.log(`${cars} cars left`)
-}
+// for( let cars = 100; cars >= 5; cars -=5){
+//     console.log(`${cars} cars left`)
+// }
 
 
 

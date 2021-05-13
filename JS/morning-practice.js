@@ -16,7 +16,7 @@ console.log(cube(2));
 
 
 function cubeRoot(x){
-    return Math.cbrt(x);
+    return Math.cbrt(x).toFixed(0);
 }
 
 console.log(cubeRoot(10));
@@ -39,4 +39,17 @@ function remainder(x, y){
     } else {
         return x % y;
     }
+}
+
+console.log(remainder(5, 4))
+
+// Write a JavaScript program to construct the following pattern, using a nested for loop.
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+for(let i = 1; i<= 9; i++){
+    console.log(i.toString().repeat(i));
 }
