@@ -53,3 +53,13 @@ console.log(remainder(5, 4))
 for(let i = 1; i<= 9; i++){
     console.log(i.toString().repeat(i));
 }
+
+//Write a function named secondToLast(arr) that returns the data type of the second to last element of the
+//array parameter. When you call the function, pass in an array of your choosing
+
+function secondToLast(arr){
+    var arr = ["burger", "bacon", "cheese"];
+    return arr.length(-2);
+}
+
+console.log(secondToLast());
