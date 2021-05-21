@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>DOM: Query and Modify</title>
     </head>
-    <body>
+    <body id="main-body">
 
         <h1 id="main-header">Hello World!</h1>
         <ul>
@@ -24,6 +24,11 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
         </p>
+
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn1">button 1</button>-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn2">button 2</button>-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn3">button 3</button>-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="btn4">button 4</button>-->
 
         <script>
             (function() {
@@ -50,13 +55,105 @@
                     console.log(listItems[i]);
                 }
                 // TODO: Set text color on every other list item to grey
-                listItems.style.color = "grey";
+                for (var i = 0; i < listItems.length; i +=2) {
+                    listItems[i].style.color = "grey";
+                }
                 // TODO: Set text color of li with dbid = 1 to blue
+                for (let i = 0; i <= listItems.length - 1; i++) {
+                    let element = listItems[i].getAttribute("data-dbid");
+                    if(element == 1){
+                        listItems[i].style.color = "#0000ff";
+                    }
+                }
+
 
                 // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-                // var subParagraphs = ;
+                var subParagraphs = document.getElementsByClassName("sub-paragraph");
+                console.log(subParagraphs);
 
                 // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+                subParagraphs[0].innerHTML = "Mission Accomplished";
+
+
+                var addDiv = document.createElement("div");
+                    addDiv.setAttribute("id", "div1");
+                    document.body.appendChild(addDiv);
+
+                var spot1 = document.createElement("button");
+                    spot1.setAttribute("id", "btn1");
+                    spot1.innerHTML = "Click me Bruh";
+                    addDiv.appendChild(spot1);
+
+
+                var spot2 = document.createElement("button");
+                spot2.setAttribute("id", "btn2");
+                spot2.innerHTML = "Red";
+                addDiv.appendChild(spot2);
+
+
+                var spot3 = document.createElement("button");
+                spot3.setAttribute("id", "btn3");
+                spot3.innerHTML = "Green";
+                addDiv.appendChild(spot3);
+
+
+                var spot4 = document.createElement("button");
+                spot4.setAttribute("id", "btn4");
+                spot4.innerHTML = "Orange";
+                addDiv.appendChild(spot4);
+
+
+                newEvent();
+                function newEvent(){
+                    document.getElementById("btn1")
+                    .addEventListener("click", mission);
+                }
+
+                function mission(){
+                    mainHeader.innerHTML = "Sup Bruh!";
+                }
+
+
+                newRed();
+                function newRed(){
+                    document.getElementById("btn2")
+                        .addEventListener("click", red);
+                }
+
+                function red(){
+                    document.body.style.backgroundColor = "red";
+                }
+
+
+                newGreen();
+                function newGreen(){
+                    document.getElementById("btn3")
+                        .addEventListener("click", green);
+                }
+
+                function green(){
+                    document.body.style.backgroundColor = "green";
+                }
+
+
+                newOrange();
+                function newOrange(){
+                    document.getElementById("btn4")
+                        .addEventListener("click", orange);
+                }
+
+                function orange(){
+                    document.body.style.backgroundColor = "orange";
+                }
+
+
+
+
+
+
+
+
+
             })();
         </script>
     </body>
