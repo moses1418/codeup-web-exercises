@@ -38,6 +38,29 @@
       </dd>
     </dl>
     <a href="#" id="toggle-text" onClick="return false">Click Me</a>
+
+    <h3>Yosemite National Park</h3>
+    <ul id="yosemite-park">
+      <li>The park’s diverse landscape supports more than 400 species.</li>
+      <li>Yosemite’s granite rock formations glow like fire at sunset.</li>
+      <li>Yosemite is one of the few places in the U.S. where you can see a rainbow at night.</li>
+      <li>Yosemite National Park covers nearly 1,200 square miles. </li>
+    </ul>
+    <h3 id="Millers-pond-heading">Miller's Pond</h3>
+    <ul id="millers-pond">
+      <li>Purchased in June 1976</li>
+      <li>It is 42.15 acres! Wow!</li>
+      <li>Park is stocked with fish by Texas Parks and Wildlife Department</li>
+      <li>They have a weight room!? Waaaaa</li>
+    </ul>
+    <h3>Redwood National Park</h3>
+    <ul id="redwood-park">
+      <li>Tallest Tree</li>
+      <li>Northern California</li>
+      <li>Only 5% Redwoods left</li>
+      <li>Almost old as Dino's</li>
+    </ul>
+    <button id="facts">Bruh</button>
     <script  src="jquery/jquery-2.2.4.js"></script>
     <script>
       // $('dd').addClass('invisible').css('visibility', 'hidden');
@@ -70,6 +93,19 @@
         })
 
       })();
+
+      $("#facts").click(function (){
+        $("ul").find("li:last").css('background-color', '#FF0');
+      })
+
+      $("h3").click(function (){
+        $(this).next().children().css("font-weight", "bold")
+      })
+
+      $("li").click(function (){
+        $(this).parent().children().first().css('color', '#0000ff');
+      })
+
     </script>
   </body>
 </html>
