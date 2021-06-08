@@ -18,30 +18,25 @@
 
             var konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
+            var requiredKey = [];
 
-            var konamiCodePosition = 0;
 
-            document.addEventListener("keydown", function (){
-                var key = konamiCode;
 
-                var requiredKey = konamiCode;
+            document.addEventListener("keydown", function (event){
 
-                if (key === requiredKey){
-                    konamiCodePosition++;
+                if (event.keyCode === konamiCode[0]){
+                    requiredKey.push(konamiCode.shift())
 
-                    if (konamiCodePosition === konamiCode.length){
-                        activateCheats();
-                        konamiCodePosition = 0;
-                    }
                 } else {
-                    konamiCodePosition = 0;
+                    konamiCode.unshift(...requiredKey);
                 }
-            });
 
-            function activateCheats(){
 
-                alert("You have activated cheat code +30 lives!");
+            if (konamiCode.length === 0){
+                alert("Cheat Activated!!!!!!!!!!!!");
+                konamiCode = requiredKey;
             }
+            });
 
         </script>
     </body>
